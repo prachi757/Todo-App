@@ -1,0 +1,122 @@
+body{
+    background-image: url(bg-image.jpg);
+    background-size: cover;
+    margin: 0;
+    padding:0;
+    height:100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.main{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input{
+    height:36px;
+    width:230px;
+    text-align: center;
+    border-radius: 10px;
+    color: #2d3436; 
+    font-size:1.1rem;
+    margin:1.5rem;
+    border: 2px solid #ff6b81; 
+     background: linear-gradient(135deg, #fceff9, #e0f7fa);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    appearance: none;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+
+#btn{
+    height:42px;
+    border:none;
+    padding:10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, #00b894, #00cec9);
+    box-shadow: 0 4px 8px rgba(0, 184, 148, 0.3);
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor:pointer;
+    text-wrap: no-wrap;
+
+
+}
+
+#btn:hover{
+    background: linear-gradient(135deg, #019875, #00b894);
+}
+
+#row{
+    display:flex;
+    align-items:center;
+    
+}
+
+.delete{
+    height:34px;
+    border:none;
+    padding:10px 20px;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+    color: white;
+    font-weight: 500;
+    margin-left: auto;
+    transition: all 0.3 ease;
+}
+
+.delete:hover{
+    background: linear-gradient(135deg, #e63946, #ff4d4d);
+}
+
+
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  gap:10px;
+  width: 300px; 
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  padding-left:20px;
+}
+
+input:focus{
+  border: 2px solid #0984e3; 
+    outline: 3px solid #bbd6f3; 
+}
+
+h1{
+    margin-top: 3.5rem; 
+    margin-bottom: 1rem;
+    font-size: 3.8rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00cec9, #ff6b81);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+ 
+
+}
+
+
+li i{
+    color: #32CD32; 
+    font-weight: bold;
+}
+
+@media(max-width:400px){
+   #btn {
+    white-space: nowrap;
+}
+}
